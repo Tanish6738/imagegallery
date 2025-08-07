@@ -9,7 +9,7 @@ interface FileUploadProps {
 const FileUpload: React.FC<FileUploadProps> = ({
   onFilesSelected,
   accept = '*/*',
-  maxFiles = 50
+  maxFiles = 5000
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isDragOver, setIsDragOver] = useState(false);
