@@ -29,7 +29,7 @@ const Gallery = () => {
             Temporary File Gallery
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Upload and browse your files in a beautiful gallery. All files are stored temporarily in your browser's memory and will be cleared on page refresh.
+            Upload and browse your files in a beautiful gallery. All files are stored temporarily in your browser&apos;s memory and will be cleared on page refresh.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Gallery = () => {
         {files.length > 0 && (
           <div className="flex justify-between items-center mb-6 p-4 bg-white rounded-lg shadow-sm">
             <div className="text-gray-600">
-              <span className="font-medium">{files.length}</span> file{files.length !== 1 ? 's' : ''} uploaded
+              <span className="font-medium">{files.length}</span> file{files.length !== 1 && 's'} uploaded
             </div>
             <button
               onClick={clearAll}
